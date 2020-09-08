@@ -142,7 +142,7 @@ main p span{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-flow: row wrap;
+    flex-flow: row wrap;  
 }
 
 .flex-items {
@@ -150,14 +150,16 @@ main p span{
   line-height: 1.5em;
   font-size: 1.6em;
   background-color: #f16059;
-  width: 30%;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: stretch;
-  padding: 10px;
+  padding: 15px;
 }
 
+    
+}
 h1.main{
         font-size: 2em;
         text-transform: uppercase;
@@ -172,6 +174,20 @@ h1.main{
 }
 footer{
     font-size: 1.5em;
+}
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media (min-width: 768px) {
+	.flex-items {
+    width: 30%;
+  }
+}
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media (min-width: 1200px) {
+  .flex-items {
+    width:30%;
+  }
 }
 /* ==========================================================================
    Helper classes
